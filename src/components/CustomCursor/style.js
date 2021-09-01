@@ -6,7 +6,7 @@ export const Cursor = styled.div`
   width: 32px;
   height: 32px;
 
-  background: ${p => p.theme.red};
+  background: ${p => (p.toggleMenu ? p.theme.text : p.theme.red)};
   border-radius: 100%;
   transform: translate(-50%, -50%);
   transition: all 0.1s ease-in-out;

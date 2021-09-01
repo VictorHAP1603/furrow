@@ -15,6 +15,8 @@ const HomeBanner = ({ onCursor }) => {
   const { currentTheme } = useGlobalStateContext()
 
   useEffect(() => {
+    if (!canvas.current) return
+
     let renderingElement = canvas.current
     let drawingElement = renderingElement.cloneNode()
 
@@ -99,15 +101,16 @@ const HomeBanner = ({ onCursor }) => {
           width="100%"
           loop
           autoPlay
+          muted="muted"
         ></video>
       </Video>
-      <Canvas
+      {/* <Canvas 
         height={size.height}
         width={size.width}
         ref={canvas}
         onMouseLeave={onCursor}
         onMouseEnter={() => onCursor("hovered")}
-      />
+      /> */}
       <BannerTitle variants={parent} initial="initial" animate="animate">
         <HeadLine variants={child} initial="initial" animate="animate">
           DIG

@@ -76,7 +76,7 @@ export const Flex = styled.div`
     ${prop =>
       prop.spaceBetween &&
       css`
-        align-items: top;
+        align-items: flex-start !important;
       `}
 
     // noHeight

@@ -104,13 +104,13 @@ const HomeBanner = ({ onCursor }) => {
           muted="muted"
         ></video>
       </Video>
-      {/* <Canvas 
+      <Canvas
         height={size.height}
         width={size.width}
         ref={canvas}
         onMouseLeave={onCursor}
         onMouseEnter={() => onCursor("hovered")}
-      /> */}
+      />
       <BannerTitle variants={parent} initial="initial" animate="animate">
         <HeadLine variants={child} initial="initial" animate="animate">
           DIG

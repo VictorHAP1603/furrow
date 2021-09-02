@@ -9,7 +9,7 @@ const HomeContent = () => {
   const animation = useAnimation()
   const [contentRef, inView] = useInView({
     triggerOnce: true,
-    rootMargin: "-300px",
+    threshold: 0.3,
   })
 
   useEffect(() => {
